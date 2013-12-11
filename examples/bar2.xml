@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chart name="firstGraph" type="bar">
+	<labels>
+		<label>first</label>
+		<label>second</label>
+		<label>third</label>
+		<label>forth</label>
+		<label>fifth</label>
+		<label>sixth</label>
+	</labels>
+	<data>
+		<style>
+			<fillColor r="250" g="0" b="250" a="1"/>
+			<strokeColor r="0" g="0" b="0" a="1"/>
+		</style>
+		<point value="7"/>
+		<point value="5"/>
+		<point value="20"/>
+		<point value="25"/>
+		<point value="17"/>
+		<point value="43"/>
+	</data>
+</chart>

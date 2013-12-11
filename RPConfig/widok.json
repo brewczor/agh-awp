@@ -1,0 +1,1 @@
+{"_id":"_design/widoki","language": "javascript","views":{"wszystkie": {"map": "function(doc){if(doc.type && doc.type === 'rpdata'){emit(doc.created, doc);}}"}}}

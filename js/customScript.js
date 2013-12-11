@@ -8,7 +8,7 @@ function initialize() {
     //drop
     dropZone = document.getElementById('drop_zone');
     dropZone.addEventListener('dragover', handleDragOver, false);
-    dropZone.addEventListener('drop', handleFileSelectDrop, false);
+    dropZone.addEventListener('dwrop', handleFileSelectDrop, false);
 }
 
 

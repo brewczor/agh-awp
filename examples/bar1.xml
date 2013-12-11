@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chart name="Bar Chart" type="bar">
+	<labels>
+		<label>first</label>
+		<label>second</label>
+		<label>third</label>
+		<label>forth</label>
+		<label>fifth</label>
+		<label>sixth</label>
+	</labels>
+	<data>
+		<style>
+			<fillColor r="100" g="220" b="100" a="0.5"/>
+			<strokeColor r="100" g="220" b="100" a="1"/>
+		</style>
+		<point value="10"/>
+		<point value="40"/>
+		<point value="20"/>
+		<point value="30"/>
+		<point value="35"/>
+		<point value="15"/>
+	</data>
+	<data>
+		<style>
+			<fillColor r="200" g="100" b="200" a="0.5"/>
+			<strokeColor r="200" g="100" b="200" a="1"/>
+		</style>
+		<point value="7"/>
+		<point value="5"/>
+		<point value="32"/>
+		<point value="25"/>
+		<point value="43"/>
+		<point value="43"/>
+	</data>
+</chart>

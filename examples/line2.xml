@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chart name="Line Chart" type="line">
+	<labels>
+		<label>first</label>
+		<label>second</label>
+		<label>third</label>
+		<label>forth</label>
+		<label>fifth</label>
+		<label>sixth</label>
+	</labels>
+	<data>
+		<style>
+			<fillColor r="220" g="50" b="100" a="1"/>
+			<strokeColor r="220" g="220" b="100" a="1"/>
+			<pointColor r="220" g="220" b="100" a="1"/>
+			<pointStrokeColor r="220" g="220" b="100" a="1"/>
+		</style>
+		<point value="100"/>
+		<point value="80"/>
+		<point value="95"/>
+		<point value="67"/>
+		<point value="81"/>
+		<point value="99"/>
+	</data>
+	<data>
+		<style>
+			<fillColor r="70" g="50" b="255" a="0.8"/>
+			<strokeColor r="70" g="50" b="255" a="1"/>
+			<pointColor r="220" g="100" b="255" a="1"/>
+			<pointStrokeColor r="220" g="220" b="100" a="1"/>
+		</style>
+		<point value="66"/>
+		<point value="75"/>
+		<point value="60"/>
+		<point value="50"/>
+		<point value="81"/>
+		<point value="70"/>
+	</data>
+</chart>

@@ -1,0 +1,11 @@
+1) Dane Bitcoin:
+https://bitpay.com/api/rates
+
+2) Dane RP:
+http://89.79.177.93:5984/rpdata/_design/widoki/_view/wszystkie?limit=1000&descending=true
+
+3) Umieszczenie widoku
+curl -X PUT http://192.168.0.30:5984/rpdata/_design/widoki -H "Content-Type: application/json" -d @widok.json
+
+3) test:
+ls -R

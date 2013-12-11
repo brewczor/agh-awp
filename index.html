@@ -1,61 +1,70 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Chart Maker</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<title>Chart Maker</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="js/customScript.js"></script>
-    <script src="js/Chart.js"></script>
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+		<!-- Must be before my scripts -->
+		<script type="text/javascript" src="js/jquery-2.0.3.js"></script>
+		<script src="js/Chart.js"></script>
 
-    <!-- Custom styles for this template -->
-    <link href="css/customStyle.css" rel="stylesheet"> 
+		<script src="js/customScript.js"></script>
+		<script src="js/ajax.js"></script>
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+		<!-- Custom styles for this template -->
+		<link href="css/customStyle.css" rel="stylesheet"> 
+		
+		<!-- Just for debugging purposes. Don't actually copy this line! -->
+		<!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 
-    <!--[if lte IE 8]>
-		<script src="js/excanvas.js"></script>
-	<![endif]-->
-  </head>
-  <body onload="initialize();">
-       <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a id="upload" href="javascript:clickInput()">Upload XML</a></li>
-          <!-- <li><a href="#">How To</a></li> -->
-        </ul>
-        <h3 class="text-muted">Chart Maker</h3>
-      </div>
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
 
-      <input  id="fileinput" type='file' class="hide" />
+		<!--[if lte IE 8]>
+			<script src="js/excanvas.js"></script>
+		<![endif]-->
+	</head>
+	<body onload="initialize();">
+		<div class="container">
+			<div class="header">
+				<ul class="nav nav-pills pull-right">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a id="upload" href="javascript:clickInput()">Upload XML</a></li>
+					<li><a id="clock" href="javascript:MyLoader.loadClock()">Clock</a></li>
+					<li><a id="clock" href="javascript:MyLoader.loadBitcoin()">BitCoin</a></li>
+					<li><a id="clock" href="javascript:MyLoader.loadRPData()">RPi-Data</a></li>
+					<li><a id="clock" href="javascript:MyLoader.loadRPCPU()">RPi-CPU</a></li>
+					<li><a id="clock" href="javascript:MyLoader.loadRPCPULine()">RP-CPUL</a></li>
+				</ul>
+				<h3 class="text-muted">Chart Maker</h3>
+			</div>
 
-      <div id="drop_zone" class="jumbotron">
-        <h2 id="chartHeader">Drag and drop XML here</h2>
-        <div><canvas id="chart" height="450" width="600" style="display: none;"></canvas></div>
-         <br/>
-         <p id="descText" style="display: block;" class="lead">Great possibility to create custom Charts from XML files for presentations, websites and documents.</p>
+			<input  id="fileinput" type='file' class="hide" />
 
-        <p id="btnP" style="display: none;"><a class="btn btn-lg btn-success" href="javascript:saveChart()" role="button">Show as a Picture</a></p>
-      </div>
+			<div id="chartDiv" class="jumbotron">
+				<div id="drop_zone">
+					<h2 id="chartHeader">Drag and drop XML here</h2>
+					<div><canvas id="chart" height="450" width="600" style="display: none;"></canvas></div>
+					<br/>
+					<p id="descText" style="display: block;" class="lead">Great possibility to create custom Charts from XML files for presentations, websites and documents.</p>
+					<p id="btnP" style="display: none;"><a class="btn btn-lg btn-success" href="javascript:saveChart()" role="button">Show as a Picture</a></p>
+				</div>
+			</div>
+  
+			<div class="footer">
+				<p>&copy; Łukasz Brewczyński 2013</p>
+			</div>
 
-          
-      <div class="footer">
-        <p>&copy; Łukasz Brewczyński 2013</p>
-      </div>
+		</div> <!-- /container -->
 
-    </div> <!-- /container -->
-
-
+	</body>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

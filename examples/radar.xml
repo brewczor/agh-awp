@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chart name="Radar Chart" type="radar">
+	<labels>
+		<label>first</label>
+		<label>second</label>
+		<label>third</label>
+		<label>forth</label>
+		<label>fifth</label>
+		<label>sixth</label>
+	</labels>
+	<data>
+		<style>
+			<fillColor r="220" g="50" b="100" a="1"/>
+			<strokeColor r="220" g="220" b="100" a="1"/>
+			<pointColor r="220" g="220" b="100" a="1"/>
+			<pointStrokeColor r="220" g="220" b="100" a="1"/>
+		</style>
+		<point value="100"/>
+		<point value="37"/>
+		<point value="56"/>
+		<point value="98"/>
+		<point value="77"/>
+		<point value="33"/>
+	</data>
+	<data>
+		<style>
+			<fillColor r="70" g="50" b="100" a="0.9"/>
+			<strokeColor r="50" g="220" b="100" a="1"/>
+			<pointColor r="220" g="100" b="100" a="1"/>
+			<pointStrokeColor r="220" g="220" b="100" a="1"/>
+		</style>
+		<point value="54"/>
+		<point value="76"/>
+		<point value="80"/>
+		<point value="23"/>
+		<point value="66"/>
+		<point value="98"/>
+	</data>
+	<data>
+		<style>
+			<fillColor r="70" g="200" b="100" a="0.5"/>
+			<strokeColor r="50" g="220" b="100" a="1"/>
+			<pointColor r="220" g="100" b="100" a="1"/>
+			<pointStrokeColor r="220" g="220" b="100" a="1"/>
+		</style>
+		<point value="45"/>
+		<point value="86"/>
+		<point value="23"/>
+		<point value="45"/>
+		<point value="65"/>
+		<point value="67"/>
+	</data>
+</chart>
