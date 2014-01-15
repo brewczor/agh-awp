@@ -1,0 +1,30 @@
+﻿#source for this project
+http://raspberrypihelp.net/tutorials/1-openvpn-server-tutorial
+
+#if you use WiFi adapter change this file: /etc/default/ifplugd
+OriginalLine: HOTPLUG_INTERFACES="all"
+LineUpdated: HOTPLUG_INTERFACES="eth0 wlan0"
+#it prevents from disconnecting when openVPN starts
+
+
+#before using php configuration tool you have to
+
+#1 Update your Raspberry Pi
+sudo apt-get update
+
+#2 Install apache
+sudo apt-get install apache2
+
+#3 Install php
+sudo apt-get install php5
+
+#4 Change priviliges for user www-data
+#  add this line in /etc/sudoers: 
+www-data ALL=(ALL) NOPASSWD: ALL
+
+#5 Copy openvpn.php file into (if you can't use "sudo chmod 777 /var/www" and try again)
+/var/www
+
+#6 Open site in your browser
+RaspberryIP/openvpn.php
+ex. 192.168.0.30/openvpn.php
